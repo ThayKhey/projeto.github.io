@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="./img/logo-1.png">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+    <title>Formula E</title>
+</head>
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <a href="#" class="logo">
+            <div class="nome-logo"><span>Formula</span>E</div>
+        </a>
+
+        <ul class="side-menu">
+            <li class="active"><a href="#inicio"><i class='bx bx-home'></i>Inicio</a></li>
+            <li><a href="#corridas"><i class='bx bxs-car-crash'></i>Corridas</a></li>
+            <li ><a href="#quiz"><i class='bx bx-joystick-alt'></i>Quiz</a></li>
+            <li><a href="corridas.html"><i class='bx bx-calendar'></i>Calendario</a></li>
+            <li><a href="#"><i class='bx bxs-face-mask'></i>Pilotos</a></li>
+            <li><a href="#"><i class='bx bx-news' ></i>Notícias</a></li>
+            <li><a href="#"><i class='bx bxs-user-account'></i>Parcerias</a></li>
+            <li><a href="#"><i class='bx bx-phone'></i>Contato</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Sair
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Fim do menu -->
+
+    <!-- Main Conteúdo -->
+    <div class="conteudo">
+        <!-- Navbar -->
+        <nav>
+
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Pesquisar...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <select id="language-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            </select>
+
+            <input type="checkbox" id="theme-toggle" hidden>
+            <!-- autodescrição-->
+            <button id="toggle-audiodescription" class="audiodescription-btn">Ativar Audiodescrição</button>
+            <!--tradução-->
+
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="usuario">
+                <img src="img/logo-1.png">
+            </a>
+        </nav>
+
+        <!-- fim do Navbarzinho -->
+
+        <main>
+            <div class="header">
+                <div class="esquerda">
+                    <h1>Formula E</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Game
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Quiz</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="compartilhar">
+                    <i class='bx bx-share-alt'></i>
+                    <span>Compartilhar</span>
+                </a>
+            </div>
+
+            <!--Carrossel-->
+
+            <div class="carrossel-container" id="inicio">
+                <div class="carrossel">
+                    <div><img src="./img/Mahindra_car1.jfif" alt="Slide 1"></div>
+                    <div><img src="./img/Mahindra_car2.jfif" alt="Slide 2"></div>
+                    <div><img src="./img/Mahindra_car3.jfif" alt="Slide 3"></div>
+                </div>
+                <div class="carrossel-text">
+                    <h2>Mahindra Racing!</h2>
+                    <p>Bem-vindo e venha prestigiar o nosso mundo da Formula E.</p>
+                </div>
+                <div class="carrossel-overlay">
+                    <h2>Viva a emoção!</h2>
+                    <p>Experimente a adrenalina da velocidade na pista da Formula E.</p>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            
+            <!--Problema-->
+            <section class="problema">
+                <h2>Problema identificado</h2>
+                <ul>
+                    <li> A popularização da Mahindra na Fórmula E enfrenta desafios como competir com equipes estabelecidas, </li>
+                    <li>consolidar sua marca, atrair patrocinadores e expandir sua base de fãs. Investimentos em tecnologia </li>
+                    <li>e desenvolvimento de talentos são essenciais para manter a competitividade. O sucesso requer uma </li>
+                    <li>abordagem estratégica abrangente, incluindo marketing, parcerias e foco na inovação.</li>
+                </ul>
+            </section>
+
+            <section class="solucao">
+                <h2>Solução</h2>
+                <ul>
+                   <li> A solução é um site interativo e gamificado dedicado à Fórmula E, que oferece uma experiência </li>
+                   <li> imersiva com informações sobre circuitos, estatísticas, classificações e passeios virtuais dos carros. </li>
+                   <li> A plataforma será fácil de usar e acessível em diferentes dispositivos. </li>
+                   <li> Recursos como quizzes interativos sobre a história da Fórmula E, pilotos e equipes, </li>
+                   <li> múltiplos níveis de dificuldade, e rankings locais e globais com recompensas irão engajar os usuários. </li>
+                   <li> Elementos sociais e interativos, como quizzes em tempo real durante as corridas e opções de compartilhamento</li>
+                   <li> de resultados nas redes sociais, aumentarão a visibilidade e o engajamento. Esta abordagem visa atrair </li>
+                   <li> novos públicos, educar sobre os benefícios dos carros elétricos e fortalecer a posição da Mahindra Racing na Fórmula E.</li>
+                </ul>
+            </section>
+
+
+
+            <!--curiosidade-->
+            <div class="curiosidades">
+                <h2>Curiosidades sobre a Formula E</h2>
+                <ul>
+                    <li>A Formula E é a primeira competição de carros de corrida totalmente elétricos do mundo.</li>
+                    <li>O campeonato foi inaugurado em 2014 pela Federação Internacional de Automobilismo (FIA).</li>
+                    <li>As corridas da Formula E são disputadas em circuitos urbanos em várias cidades ao redor do mundo.</li>
+                    <li>Os carros da Formula E atingem velocidades de até 280 km/h.</li>
+                    <li>A bateria dos carros de Formula E é capaz de durar uma corrida inteira, eliminando a necessidade de trocas durante a prova.</li>
+                </ul>
+            </div>
+            <!--chamada-->
+            <div class="chamada">
+                <h2>Chamada para Ação:</h2>
+                <p>Explore nosso site para obter as últimas notícias, informações sobre corridas, perfis de pilotos e muito mais. Teste seus conhecimentos com nossos quizzes exclusivos e veja o quanto você sabe sobre a competição de corrida de carros elétricos mais empolgante do mundo. Não perca nenhuma novidade! Inscreva-se em nossa newsletter para receber atualizações regulares diretamente na sua caixa de entrada. Junte-se a nós e faça parte dessa revolução verde da velocidade!</p>
+                <button class="chamada-btn">Inscrever-se na Newsletter</button>
+            </div>
+
+            <!--Corridas-->
+            <section class="corridas-section" id="corridas">
+                <h2>Próximas Corridas</h2>
+                <div class="corridas-container">
+                    <div class="corrida">
+                        <h3>New York City E-Prix</h3>
+                        <p>Data: 9 e 10 de julho de 2024</p>
+                        <p>Local: Red Hook, Brooklyn</p>
+                        <p>Cidade: Nova York, EUA</p>
+                    </div>
+                    <div class="corrida">
+                        <h3>Seoul E-Prix</h3>
+                        <p>Data: 14 de agosto de 2024</p>
+                        <p>Local: TBD</p>
+                        <p>Cidade: Seul, Coreia do Sul</p>
+                    </div>
+                    <div class="corrida">
+                        <h3>Paris E-Prix</h3>
+                        <p>Data: 24 de agosto de 2024</p>
+                        <p>Local: Circuit des Invalides</p>
+                        <p>Cidade: Paris, France</p>
+                    </div>
+                    <div class="corrida">
+                        <h3>Mexico City E-Prix</h3>
+                        <p>Data: 7 de setembro de 2024</p>
+                        <p>Local: Autódromo Hermanos Rodríguez</p>
+                        <p>Cidade: Cidade do México, México</p>
+                    </div>
+                    <div class="corrida">
+                        <h3>Berlin E-Prix</h3>
+                        <p>Data: 21 de setembro de 2024</p>
+                        <p>Local: Tempelhof Airport Street Circuit</p>
+                        <p>Cidade: Berlim, Alemanha</p>
+                    </div>
+                    <div class="corrida">
+                        <h3>Rome E-Prix</h3>
+                        <p>Data: 5 de outubro de 2024</p>
+                        <p>Local: Circuito Cittadino dell'EUR</p>
+                        <p>Cidade: Roma, Itália</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Insights -->
+            <ul class="insights" id="quiz">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            +1.000
+                        </h3>
+                        <p>Jogadores Online</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-trending-up' ></i>
+                    <span class="info">
+                        <h3>
+                            3,944
+                        </h3>
+                        <p>Sua Pontuação</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-trending-down'></i>
+                    <span class="info">
+                        <h3>
+                            14,721
+                        </h3>
+                        <p>Suas Decaidas</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-bar-chart-square'></i>
+                    <span class="info">
+                        <h3>
+                            -6,742
+                        </h3>
+                        <p>Ranking</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- fim dos Insights -->
+
+            <!--Quiz-->
+            <div class="quiz-container">
+                <div class="quiz">
+                    <p id="numero">#1</p>
+                    <div class="question">
+                        <p id="question">Qual equipe conquistou a pole position na última corrida da Formula E?</p>
+                    </div>
+                    <div class="options">
+                        <button id="0">Audi Sport ABT</button>
+                        <button id="1">Nissan e.dams</button>
+                        <button id="2">Mercedes-EQ Formula E Team</button>
+                        <button id="3">Envision Virgin Racing</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="progressChart"></canvas>
+                </div>
+            </div>
+            <!--Fim do Quiz-->
+            
+            <!--Ranqueada-->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-line-chart'></i>
+                        <h3>Ranqueada</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Usuários</th>
+                                <th>Pontuação</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="img/profile-1.jpg">
+                                    <p>Sebastian Ney</p>
+                                </td>
+                                <td>978.465</td>
+                                <td><span class="status ativo">Ativo</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/profile-1.jpg">
+                                    <p>Giovani Jam</p>
+                                </td>
+                                <td>890.756</td>
+                                <td><span class="status inativo">Inativo</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/profile-1.jpg">
+                                    <p>Michael waiks</p>
+                                </td>
+                                <td>599.000</td>
+                                <td><span class="status em-partida">Em partida</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+               
+        </main>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
